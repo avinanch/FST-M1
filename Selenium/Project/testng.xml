@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Selenium Project Activities Test">
+    <parameter name="loginUserName" value="root" />
+    <parameter name="password" value="pa$$w0rd" />
+    <parameter name="visitorName" value="Avinandan Chakrabarti" />
+    <parameter name="email" value="avinanch@in.ibm.com"/>
+    <parameter name="subject" value="Selenium"/>
+    <parameter name="comment" value="I want to learn Selenium with Java and Python. Also, Junit and TestNG with it"/>
+    <test name="GroupedMethods" parallel="classes">
+        <classes>
+            <class name="ProjectActivities.Activity1"/>
+            <class name="ProjectActivities.Activity2"/>
+            <class name="ProjectActivities.Activity3"/>
+            <class name="ProjectActivities.Activity4"/>
+            <class name="ProjectActivities.Activity5"/>
+            <class name="ProjectActivities.Activity6"/>
+            <class name="ProjectActivities.Activity7"/>
+            <class name="ProjectActivities.Activity8"/>
+            <class name="ProjectActivities.Activity9"/>
+        </classes>
+    </test>
+</suite>
